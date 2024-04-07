@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+            <div class="header ">
+                <div class="heading">
+                    <h1>STUDENT SURVEY FORM</h1>
+                    <p> </p>
+                </div>
+                <div align="center">
+                <form name="myForm" onsubmit="return myFun()"  >
+                    <div class="input-element">
+                        <label>
+                            Name : 
+                        </label>
+                        <input id="name " type="text" required/>
+                        <label>
+                    </div>
+                    <div class="input-element">
+                        <label >
+                            Date Of Birth : 
+                        </label>
+                        <input type="date" value=""required/>
+                    </div>
+                    <div class="input-element">
+                        <label id="select">
+                            Gender : 
+                        </label>
+                        <select name="dropdown" class="opt" required/>
+                            <option value=""> </option>
+                            <option value="">Male</option>
+                            <option value="">Female</option>
+                        </select>          
+                    </div>
+                    <div class="input-element">
+                        <label>
+                            Email : 
+                        </label>
+                        <input type="text" name="Email" value="" required/>    <span id="Message"></span>      
+                    </div>
+                    <div class="input-element">
+                        <label id="ag">
+                            Age : 
+                        </label>
+                        <input type="number" value=""required/>
+                    </div>
+                    <div class="input-element">
+                        <label id="select">
+                            Program :
+                        </label>
+                        <select name="dropdown" class="opt" required/>
+                            <option value=""> </option>
+                            <option value="">B.Tech </option>
+                            <option value="">M.Tech</option>
+                            <option value="">B.Science</option>
+                            <option value="">BCA</option>
+                            <option value="">PHD</option>                           
+                        </select>          
+                    </div>
+                    <div class="input-element">
+                        <label id="select">
+                            Branch : 
+                        </label>
+                        <select name="dropdown" class="opt" required/>
+                            <option value=""> </option>
+                            <option value="">Computer Science and Engineering </option>
+                            <option value="">Computer Science and Information Technology</option>
+                            <option value="">Chemical Engineering</option>
+                            <option value="">Electrical Engineering</option>
+                            <option value="">Civil Engineering</option>
+                            <option value="">Mechanical Engineering</option>
+                            <option value="">System Engineering</option>
+                        </select>          
+                    </div>
+                    <div class="input-element">
+                        <label id="select">
+                            Year Of Graduation : 
+                        </label>
+                        <select name="dropdown" class="opt" required/>
+                            <option value=""> </option>
+                            <option value="">2022</option>
+                            <option value="">2023</option>
+                            <option value="">2024</option>
+                            <option value="">2025</option>
+                            <option value="">2026</option>
+                            <option value="">2027</option>
+                        </select>          
+                    </div>  
+                    <div class="input-element">
+                        <label>
+                            Contact No. : 
+                        </label>
+                        <input type="text" name="phone" required/>
+                            <b><span id="PhMessage"> </span></b>
+                    </div>        
+                    <div class="input-element">
+                        <label id="add">
+                            Address : 
+                        </label>
+                        <input placeholder="Address" id="address" type="text" required/>
+                    </div>     
+                    <div class="input-element">
+                        <label id="select">
+                            Area Of Interest : 
+                        </label>
+                        <select name="dropdown" class="opt" required/>
+                            <option value=""> </option>
+                            <option value="">Singing</option>
+                            <option value="">Dancing</option>
+                            <option value="">Sports</option>
+                            <option value="">Drawing</option>
+                            <option value="">Photograahy</option>
+                            <option value="">Writing</option>
+                        </select>          
+                    </div>
+                    <div class="input-element">
+                        <label >
+                        Achievements : 
+                        </label>
+                        <input id="achieve" type="text" required/>
+                    </div>      
+                    <div class="input-element">
+                        <label id="sug">
+                            Any Suggestions :
+                        </label>
+                        <input placeholder="Suggestions" id="any" type="text">
+                    </div>
+                    <button type="submit" class="sub">Submit</button>
+
+                </form>
+                </div>
+            </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
